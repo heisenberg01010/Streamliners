@@ -3,8 +3,8 @@ package task1;
 public class main {
     public static void main(String[] args) {
 
-        Product car = new Product("car", 300000);
-        Product car1 = new Product("car", 300000);
+        Product car = new Product("car", 3000000);
+        Product car1 = new Product("car", 3000000);
         Product bike = new Product("bike", 50000);
 
         System.out.println(car);
