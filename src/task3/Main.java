@@ -6,7 +6,7 @@ import java.util.Calendar;
 
 public class Main {
     public static void main(String[] args) {
-        /*TouristPlace tajMahal = new TouristPlace("Taj Mahal", "9AM to 7PM", "Agra", 100, "Romantic");
+        TouristPlace tajMahal = new TouristPlace("Taj Mahal", "9AM to 7PM", "Agra", 100, "Romantic");
         tajMahal.addFamousFor("Photography");
         tajMahal.addFamousFor("Love Point");
         tajMahal.addFamousFor("Modern Marvel");
@@ -16,11 +16,11 @@ public class Main {
         tajMahal.rate(3);
 
         System.out.println(tajMahal.starRating);
-        System.out.println(tajMahal.famousFor);*/
+        System.out.println(tajMahal.famousFor);
 
-        /*DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
-        System.out.println(dtf.format(now));*/
+        System.out.println(dtf.format(now));
 
         Calendar calendar = Calendar.getInstance();
         System.out.println("The current date is : " + calendar.getTime());
@@ -30,5 +30,6 @@ public class Main {
         System.out.println("4 months later: " + calendar.getTime());
         calendar.add(Calendar.YEAR, 2);
         System.out.println("2 years later: " + calendar.getTime());
+
     }
 }

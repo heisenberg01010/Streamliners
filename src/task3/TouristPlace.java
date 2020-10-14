@@ -25,14 +25,8 @@ public class TouristPlace {
             return this;
     }
     void rate(int rating){
-        //Calculate total stars
-        float totalStars = noOfRatings * starRating;
-        //add new star rating
-        totalStars += rating;
-        //increment total rating
         noOfRatings++;
-        //Finally avg rating changed
-        starRating = totalStars / noOfRatings;
+        starRating += (rating - starRating) / noOfRatings;
     }
     public boolean isPlaceOpen() {
         workingHour = workingHour.replace("AM to ", ":")
@@ -49,4 +43,5 @@ public class TouristPlace {
 
         return true;
     }
+    
 }
