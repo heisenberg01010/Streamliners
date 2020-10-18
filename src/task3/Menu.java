@@ -27,7 +27,7 @@ public class Menu {
     }
 
     private void writeMap() throws IOException {
-        String path = "C:\\Users\\HEISENBERG\\Desktop\\data.txt";
+        String path = "C:\\Users\\HEISENBERG\\Desktop\\Data.txt";
         FileOutputStream fileOutputStream = new FileOutputStream(path);
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
         objectOutputStream.writeObject(map);
@@ -37,7 +37,7 @@ public class Menu {
 
     private void readMap() {
         try {
-            String path = "C:\\Users\\HEISENBERG\\Desktop\\data.txt";
+            String path = "C:\\Users\\HEISENBERG\\Desktop\\Data.txt";
             FileInputStream fileInputStream = new FileInputStream(path);
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
             HashMap<String, TouristPlace> hashMap = (HashMap<String, TouristPlace>) objectInputStream.readObject();
